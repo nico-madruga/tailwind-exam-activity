@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.vasco {
+    @apply bg-black; 
+}

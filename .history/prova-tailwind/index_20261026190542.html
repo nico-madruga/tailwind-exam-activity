@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/prova-tailwind/css/styleTail.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="flex flex-row justify-between bg-sky-100 p-5">
+        <img src="img/icons/logo-icon.svg" alt="logo-icon">
+        <img class="md:hidden" src="img/icons/burger-menu-icon.svg" alt="burger-menu-icon" id="mob-burguer-menu">        
+        <nav class="hidden md:flex flex-row">
+            <p>Home</p> 
+            <p>Landings</p> 
+            <p>Pages</p> 
+            <p>Docs</p> 
+            <p>Help</p>
+        </nav>
+        <a class="hidden" id="get-now-button">Get it Now</a>
+    </header>
+    <main class="flex flex-col gap-30">
+        <section class="flex flex-col bg-sky-100 text-center gap-12" id="hero">
+            <h1 class="text-sky-950 font-bold self-center text-[2.5rem] w-[80vw]">Browse Million Products for your needs</h1>
+
+            <label for="product" class="hidden"></label>
+            <span><input type="text" name="product" placeholder="I want to buy..." 
+                class="bg-white text-gray-950 border border-gray-300 rounded-md w-[87vw] h-[5vh] min-h-[25px] max-h-[47px] pl-5"></span>
+            <img class="w-[87vw] self-center max-w-[453px]" src="img/hero-img.svg" alt="delivery-hero-img">
+        </section>
+
+        <section class="flex flex-col gap-9 md:grid grid-cols-4" "weekly-deals">
+            <div id="free-delivery" class="flex flex-col gap-3 bg-gray-100 self-center text-center w-[93vw] justify-items-center pt-7">
+                <h6 class="text-sm text-blue-700 font-semibold">WEEKLY DEALS</h6>
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-2xl text-sky-950 font-semibold">Free Delivery</h2>
+                    <a id="learn-more-delivery" class="justify-center text-white bg-blue-600 w-[25vw] h-[2rem] self-center rounded-2xl">Learn More</a>
+                </div>
+                <img class="self-center w-[25rem]" src="img/delivery.svg" alt="free-delivery-img">
+            </div>
+
+            <div class="bg-gray-100 self-center text-center w-[93vw] justify-items-center pt-7" id="disc-up">
+                <div id="disc-up-text">
+                    <h2>Disc Up to 25%</h2>
+                    <a class="learn-more">Learn More &rarr;</a>
+                </div>
+                    <img src="img/shopping-cart-mobile.svg" alt="disc-up-img">
+            </div>
+
+            <div class="bg-gray-100 self-center text-center w-[93vw] justify-items-center pt-7" id="free-data">
+                <div id="free-data-text">
+                    <h2>Free 5GB Data</h2>
+                    <a class="learn-more">Learn More &rarr;</a>
+                </div>
+                    <img src="img/call-center.svg" alt="free-data-img">
+            </div>
+
+            <div class="bg-gray-100 self-center text-center w-[93vw] justify-items-center pt-7" id="ehya-versarry-deals">
+                <div id="ehya-versarry-text">
+                    <h2>EhyaVersarry Monthly Deals</h2>
+                    <a class="learn-more">Learn More &rarr;</a>
+                </div>
+                    <img src="img/e-commerce-welcome.svg">
+            </div>
+        </section>
+
+        <section id="categories">
+            <div class="show-all-desktop">
+            <h2>Categories</h2>
+                <a class="show-all-mob-hide">Show All</a>
+            </div>
+            <div id="categories-cards">
+                <div class="categories-card" id="fashion">
+                    <img src="img/icons/tshirt-icon.svg" alt="tshirt-icon">
+                    <p>Fashion</p>
+                    <p class="info-paragraph">290K Items</p>
+                </div>
+
+                <div class="categories-card" id="handphone">
+                    <img src="img/icons/phone-icon.svg" alt="tshirt-icon">
+                    <p>Handphone</p>
+                    <p class="info-paragraph">3M Items</p>
+                </div>
+
+                <div class="categories-card" id="laptop-categories">
+                    <img src="img/icons/laptop-icon.svg" alt="tshirt-icon">
+                    <p>Laptop</p>
+                    <p class="info-paragraph">1,2M Items</p>
+                </div>
+
+                <div class="categories-card" id="music">
+                    <img src="img/icons/note-icon.svg" alt="note-icon">
+                    <p>Music</p>
+                    <p class="info-paragraph">751K Items</p>
+                </div>
+
+                <div class="categories-card" id="photography">
+                    <img src="img/icons/camera-icon.svg" alt="camera-icon">
+                    <p>Photography</p>
+                    <p class="info-paragraph">1,0M Items</p>
+                </div>
+
+                <div class="categories-card" id="furniture">
+                    <img src="img/icons/chair-icon.svg" alt="chair-icon">
+                    <p>Furniture</p>
+                    <p class="info-paragraph">88K Items</p>
+                </div>
+
+                <div class="categories-card" id="health">
+                    <img src="img/icons/stethoscope-icon.svg" alt="stethoscope-icon">
+                    <p>Health</p>
+                    <p class="info-paragraph">761K Items</p>
+                </div>
+
+                <div class="categories-card" id="sports">
+                    <img src="img/icons/soccer-ball-icon.svg" alt="soccer-ball-icon">
+                    <p>Sports</p>
+                    <p class="info-paragraph">2,9K Items</p>
+                </div>
+            </div>
+
+            <a id="show-all">Show All</a>
+        </section>
+        
+        <section id="recommended">
+            <div class="show-all-desktop">
+            <h2>Recommended for you</h2>
+                <a class="show-all-mob-hide">Show All</a>
+            </div>
+            <div id="recommendations">
+                <div class="recommendation" id="aging-cream">
+                    <div><img src="img/aging-cream.svg" alt="aging-cream-img"></div>
+                    <p>The best Anti Aging Cream with cheap price</p>
+                </div>
+
+                <div class="recommendation" id="headphones">
+                    <div><img src="img/headphones.svg" alt="aging-cream-img"></div>
+                    <p>Best budget Headphone for RPG Gamers</p>
+                </div>
+
+                <div class="recommendation" id="laptop-recommended">
+                    <!--usei .png aqui por que o svg não ta exportando certo essa imagem específica.-->
+                    <div><img src="img/laptop.png" alt="aging-cream-img"></div>
+                    <p>Have a much project? You must have a this Savage Laptop</p>
+                </div>
+            
+                <div class="recommendation" id="blender">
+                    <div><img src="img/blender.svg" alt="aging-cream-img"></div>
+                    <p>Bored work from home? You can make a juice for your health</p>
+                </div>
+            </div>
+
+            <a id="show-all">Show All</a>
+        </section>
+        <hr id="show-all-hr">
+        <section id="why-us">
+            <h1>Why the Choose us than other?</h1>
+            <p id="why-us-paragraph">
+                Many reasons why customer choose 
+                us than other ecommerce. We have 
+                some plus point that maybe other 
+                can't have.
+            </p>
+            <div id="why-us-content">
+                <div id="why-us-cards">
+                    <div class="why-us-card" id="stock">
+                        <div><img src="img/icons/stock-icon.svg" alt="stock-icon" id="stock-icon"></div>
+                        <h2>Have Most Stock</h2>
+                        <p>
+                            We have many stock until next year
+                            to supply your needs.
+                        </p>
+                    </div>
+
+                    <div class="why-us-card" id="secure">
+                        <div><img src="img/icons/secure-icon.svg" alt="secure-icon" id="secure-icon"></div>
+                        <h2>100% Secure</h2>
+                        <p>
+                            You don't need to worry when
+                            transaction on out plattform now.
+                        </p>
+                    </div>
+
+                    <div class="why-us-card" id="support">
+                        <img src="img/icons/support-icon.svg" alt="support-icon" id="support-icon">
+                        <h2>24/7 Support</h2>
+                        <p>
+                            If any problem use our plattform
+                            you can contact us free.
+                        </p>
+                    </div>
+
+                    <div class="why-us-card" id="delivery">
+                        <div><img src="img/icons/delivery-icon.svg" alt="delivery-icon" id="delivery-icon"></div>
+                        <h2>Free Delivery</h2>
+                        <p>
+                            Wherever you are, we make sure 
+                            you get free delivery service.
+                        </p>
+                    </div>
+                </div>
+                <img src="img/why-us.svg" alt="why-us-img" id="why-us-img">
+            </div>
+        </section>
+        <hr>
+        <section id="most-sold">
+            <h2>Most Sold in Ehya Store</h2>
+            <p>
+                This is the seciton about the data 
+                which product with most sold in 
+                Ehya Store
+            </p>
+            <div class="most-sold-card" id="laptop-most-sold">
+                <div class="most-sold-img">
+                    <img src="img/laptop2.png" alt="laptop-most-sold-img" class="sold-card-img">
+                    <div class="most-sold-info">
+                        <b>Asus Zenbook UX-430 US</b>
+                        <div id="rate">
+                            <b>4,8</b>
+                            <img src="img/icons/star.svg" alt="star-icon">
+                            <img src="img/icons/star.svg" alt="star-icon">
+                            <img src="img/icons/star.svg" alt="star-icon">
+                            <img src="img/icons/star.svg" alt="star-icon">
+                            <img src="img/icons/empty-star.svg" alt="empty-star-icon">
+                        </div>
+                        <p>21K Total Reviews</p>
+                    </div>
+                </div>
+                <div class="most-sold-buttons">
+                    <a id="read-reviews-button">Read Reviews</a>
+                    <div id="buy-button"><img src="img/icons/buy-icon.svg"><a>Buy</a></div>
+                </div>
+            </div>
+
+            <div class="most-sold-card" id="headphones-most-sold">
+                <div class="most-sold-img">
+                    <img src="img/headphones.svg" alt="headphones-most-sold-img" class="sold-card-img">
+                    <div class="most-sold-info">
+                        <b>Audio Technica ATH M20 BT</b>
+                        <div id="rate">
+                            <b>5,0</b>
+                            <img src="img/icons/star.svg" alt="star-icon">
+                            <img src="img/icons/star.svg" alt="star-icon">
+                            <img src="img/icons/star.svg" alt="star-icon">
+                            <img src="img/icons/star.svg" alt="star-icon">
+                            <img src="img/icons/star.svg" alt="star-icon">
+                        </div>
+                        <p>300K Total Reviews</p>
+                    </div>
+                </div>
+                <div class="most-sold-buttons">
+                    <a id="read-reviews-button">Read Reviews</a>
+                    <div id="buy-button"><img src="img/icons/buy-icon.svg"><a>Buy</a></div>
+                </div>
+                
+            </div>
+
+            <div class="most-sold-card" id="aging-cream-most-sold">
+                <div class="most-sold-img">
+                    <img src="img/aging-cream.svg" alt="aging-cream-most-sold-img" class="sold-card-img">
+                    <div class="most-sold-info">
+                        <b>SK II - Anti Aging Cream</b>
+                        <div id="rate">    
+                            <b>4,9</b>
+                            <img src="img/icons/star.svg" alt="star-icon">
+                            <img src="img/icons/star.svg" alt="star-icon">
+                            <img src="img/icons/star.svg" alt="star-icon">
+                            <img src="img/icons/star.svg" alt="star-icon">
+                            <img src="img/icons/empty-star.svg" alt="empty-star-icon">
+                        </div>
+                        <p>89K Total Reviews</p>
+                    </div>
+                </div>
+                <div class="most-sold-buttons">
+                    <a id="read-reviews-button">Read Reviews</a>
+                    <div id="buy-button"><img src="img/icons/buy-icon.svg"><a>Buy</a></div>
+                </div>
+            </div>
+
+            <b id="leaderboards-button">See full Leaderboards</b>
+        </section>
+
+        <section id="comparison">
+            <h2>Compare the Product</h2>
+            <a id="comparison-button">+ New Comparison</a>
+
+            <div id="comparison-product">
+                <img src="img/laptop2.png" alt="laptop-comparison">
+
+                <p>Asus Zenbook Pro UX-430 US</p>
+                
+                <hr>
+                <div id="comparison-info">
+                    <img src="img/icons/processor-icon.svg" alt="processor-icon">
+                    <b>Processor</b>
+                    <p>Intel® Core™ i3 7100U Processor</p>
+
+                    <img src="img/icons/os-icon.svg" alt="operating-system-icon">
+                    <b>Operating System</b>
+                    <p>Windows 10 Pro for business</p>
+                    <img src="img/icons/chevron.svg" alt="chevron-icon" id="chevron-icon">
+                </div>
+            </div>
+        </section>
+
+        <section id="never-miss-promo">
+            <div>
+                <b id="promo-contrast">Never Miss a Promo</b>
+                <p>
+                    We always give our customer a 
+                    promo to gave the aprecciate for 
+                    loyalty to us. Just subscribe to us :)
+                </p>
+            
+                <div id="subscription">
+                    <input type="text" value="yourname@mail.com">
+                    <a id="subscribe-button">Subscribe</a>
+                </div>
+            </div>
+            <img src="img/subscription-img.svg" alt="subscription-img">
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-links">
+                <div id="hidden-villain">
+                <img src="img/icons/logo-icon.svg" alt="logo-icon">
+                <p>Build a modern and creative website with crealand</p>
+                <div id="hidden-socials">
+                    <img src="img/icons/google-icon.svg">
+                    <img src="img/icons/twitter-icon.svg">
+                    <img src="img/icons/instagram-icon.svg">
+                    <img src="img/icons/linkedin-icon.svg">
+                </div>
+            </div>
+            <div class="link-card" id="product-footer">
+                <b>Product</b>
+                <p>Landingpage</p>
+                <p>Features</p>
+                <p>Documentation</p>
+                <p>Referral Program</p>
+                <p>Pricing</p>
+            </div>
+
+            <div class="link-card" id="services-footer">
+                <b>Services</b>
+                <p>Documentation</p>
+                <p>Design</p>
+                <p>Themes</p>
+                <p>Illustrations</p>
+                <p>UI Kit</p>
+            </div>
+
+            <div class="link-card" id="company-footer">
+                <b>Company</b>
+                <p>About</p>
+                <p>Terms</p>
+                <p>Privacy Policy</p>
+                <p>Careers</p>
+            </div>
+
+            <div class="link-card" id="more-footer">
+                <b>More</b>
+                <p>Documentation</p>
+                <p>License</p>
+                <p>Changeblog</p>
+            </div>
+        </div>
+        <div id="villain">
+            <img src="img/icons/logo-icon.svg" alt="logo-icon">
+            <p>Build a modern and creative website with crealand</p>
+            <div>
+                <img src="img/icons/google-icon.svg">
+                <img src="img/icons/twitter-icon.svg">
+                <img src="img/icons/instagram-icon.svg">
+                <img src="img/icons/linkedin-icon.svg">
+            </div>
+        </div>
+        <div id="rights">
+            <img src="img/icons/footer-heart-icon.svg">
+            <p>Copyright © 2019. Crafted with love.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,993 @@
+@import "tailwindcss";
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+:root
+{
+    --hero-background-color: #00B9FF1B;
+    --white: #FFFFFF;
+    --button-outline-blue: #1565D8;
+    --text-contrast-color: #183B56;
+    --input-color: #5A7184;
+    --input-border-color: #E5EAF4;
+    --weekly-background-color: #B3BAC511;
+    --aging-background-color: #B3BAC51B;
+    --headphone-background-color: #00B8D91B;
+    --laptop-background-color: #FAAD131B;
+    --blender-background-color: #36B37E1B;
+    --why-us-icons-background-color: #E6F0FC;
+    --text-contrast-blue: #1565D8;
+    --comparison-background-color: #F9FBFE;
+    --promo-background-color: #00B8D9;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.2vw;
+    align-self: center;
+    background-color: var(--hero-background-color);
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+input
+{
+    color: var(--input-color);
+    height: 5.5vh;
+    width: 82vw;
+    padding-left: 1.2rem;
+    border: 1px solid var(--input-border-color);
+    border-radius: 7px;
+    font-size: 0.9rem;
+}
+
+section
+{
+    padding: 3rem  1rem 0 1rem;
+}
+
+h6
+{
+    color: var(--text-contrast-blue);
+    font-weight: 600;
+}
+
+h2
+{
+    color: var(--text-contrast-color);
+}
+
+hr
+{
+    width: 85vw;
+    height: 1px;
+    border: none;
+    background-color: var(--input-border-color);
+}
+
+b
+{
+    color: var(--text-contrast-color);
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+#hero
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.6rem;
+    padding: 0 6.5vw;
+    background-color: var(--hero-background-color);
+    text-align: start;
+    color: var(--text-contrast-color);
+    gap: 1rem;
+}
+
+#hero img
+{
+    margin-top: 1rem;
+    width: 87vw;
+    align-self: center;
+}
+
+#weekly-deals
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 1.5rem 2rem 1.5rem;
+    gap: 2rem;
+}
+
+#free-delivery
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1.8rem;
+    background-color: var(--weekly-background-color);
+}
+
+#disc-up
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--weekly-background-color);
+}
+
+#disc-up-text
+{
+    display: flex;
+    width: 7rem;
+    padding-left: 1.5rem;
+    flex-direction: column;
+    align-self: center;
+    text-align: left;
+}
+
+#free-data
+{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--weekly-background-color);
+    padding-top: 1.8rem;
+    gap: 1.8rem;
+    text-align: left;
+}
+
+#free-data-text
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#ehya-versarry-deals
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--weekly-background-color);
+    gap: 1rem;
+}
+
+#ehya-versarry-text
+{
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+#categories
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+#categories h2
+{
+    font-size: 2rem;
+}
+
+#categories-cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.categories-card
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.3rem;
+    border: 1px solid var(--input-border-color);
+    border-radius: 10px;
+}
+
+#show-all
+{
+    border: 2px solid var(--button-outline-blue);
+    border-radius: 25px;
+    color: var(--button-outline-blue);
+    font-weight: 700;
+    width: 5rem;
+    align-self: center;
+    padding: 0.7rem 1.8rem;
+}
+
+#recommended
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:4rem;
+}
+
+#recommended p
+{
+    padding: 0 1.3rem;
+}
+
+#recommended h2
+{
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+#recommendations
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#aging-cream img
+{
+    background-color: var(--aging-background-color);
+    padding: 10vw 22vw;
+    border-radius: 10px;
+}
+
+#headphones img
+{
+    background-color: var(--headphone-background-color);
+    padding: 10vw 22vw;
+    border-radius: 10px;
+}
+
+#laptop-recommended img
+{
+    background-color: var(--laptop-background-color);
+    padding: 10vw 22vw;
+    width: 9rem;
+    border-radius: 10px;
+}
+
+#blender img
+{
+    background-color: var(--blender-background-color);
+    padding: 8vw 22vw;
+    border-radius: 10px;
+}
+
+#why-us
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 8rem 1rem 2rem 1rem;
+    gap: 1.5rem;
+}
+
+#why-us p
+{
+    line-height: 1.6rem;
+    color: var(--input-color);
+}
+
+.why-us-card
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--input-border-color);
+    border-radius: 10px;
+    text-align: start;
+    gap: 1rem;
+    padding: 2rem 1.5rem;
+}
+
+#support-icon
+{
+    width: 3rem;
+}
+
+#most-sold
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 4rem;
+    gap: 3rem;
+}
+
+#most-sold h2
+{
+    padding: 0 2rem;
+}
+
+#rate
+{
+    display: flex;
+    text-align: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+#read-reviews-button
+{
+    display: flex;
+    border-radius: 25px;
+    color: var(--white);
+    background-color: var(--button-outline-blue);
+    font-weight: 600;
+    width: 7rem;
+    align-self: center;
+    padding: 0.7rem 1.8rem;
+}
+
+#buy-button
+{
+    display: flex;
+    border: 2px solid var(--button-outline-blue);
+    border-radius: 25px;
+    color: var(--button-outline-blue);
+    font-weight: 700;
+    width: 7rem;
+    align-self: center;
+    padding: 0.7rem 1.8rem;
+    gap: 2rem;
+}
+
+#buy-button img
+{
+    align-self: flex-start center;
+}
+
+#buy-button a
+{
+    justify-content: center;
+}
+
+#leaderboards-button
+{
+    color: var(--button-outline-blue);
+}
+
+#comparison
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--comparison-background-color);
+    width: 100vw;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 0;
+    gap: 3rem;
+}
+
+#comparison-button
+{
+    display: flex;
+    border: 2px solid var(--button-outline-blue);
+    border-radius: 25px;
+    color: var(--button-outline-blue);
+    font-weight: 700;
+    width: 9.5rem;
+    justify-content: center;
+    padding: 0.7rem 1.8rem;
+}
+
+#comparison-product
+{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 50vw;
+    padding: 5vh 20vw;
+    padding-bottom: 0;
+    gap: 2rem;
+}
+
+#comparison-product img
+{
+    width: 10rem;
+    align-self: center;
+}
+
+#comparison-product hr
+{
+    align-self: center;
+    width: 75vw;
+}
+
+#comparison-info
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#comparison-info p
+{
+    width: 90vw;
+    color: var(--input-color);
+    align-self: center;
+}
+
+#comparison-info img
+{
+    width: 2rem;
+}
+
+#comparison-info #chevron-icon
+{
+    width: 0.9rem;
+    padding: 1rem 0;
+}
+
+#never-miss-promo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.8rem;
+    width: 82vw;
+    padding: 0 1.8rem;
+    padding-top: 3.3rem;
+    background-color: var(--promo-background-color);
+    gap: 1.5rem;
+    color: var(--white);
+}
+
+#never-miss-promo p
+{
+    width: 68vw;
+    margin-top: 1rem;
+    align-self: center;
+}
+
+#never-miss-promo div
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+#promo-contrast
+{
+    font-size: 1.5rem;
+    color: inherit;
+    font-weight: 600;
+}
+
+#subscription
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    margin: 2rem;
+    width: 18rem;
+    background-color: var(--white);
+}
+
+#subscription input
+{
+    border: none;
+    border-radius: inherit;
+    text-align: center;
+    width: 10rem;
+}
+
+#subscribe-button
+{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: var(--promo-background-color);
+    font-weight: 600;
+    width: 7rem;
+    padding: 0.4rem 4.5rem;
+    margin-bottom: 0.8rem;
+}
+
+#footer-links
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+}
+
+#villain
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 90vw;
+}
+
+#villain img
+{
+    align-self: center;
+    padding-top: 3rem;
+    width: 30vw;
+}
+
+#villain div img
+{
+    width: 3rem;
+}
+
+#learn-more-delivery
+{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-radius: 25px;
+    color: var(--white);
+    background-color: var(--button-outline-blue);
+    width: 3.5rem;
+    font-weight: 600;
+    padding: 0.3rem;
+    font-size: 0.5rem;
+
+}
+
+#show-all-hr
+{
+    margin-top: 4rem;
+}
+
+#why-us-content
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#why-us-cards
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#hidden-villain, #hidden-socials, .show-all-mob-hide, #rights, nav
+{
+    display: none;
+}
+
+.most-sold-info
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.most-sold-buttons
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.link-card
+{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 1rem;
+}
+
+.link-card p
+{
+    font-weight: 300;
+    color: var(--text-contrast-color);
+}
+
+.most-sold-card
+{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--aging-background-color);
+    padding: 5vh 10vw;
+    gap: 1.5rem;
+    width: 14rem;
+    align-items: space-around;
+    border-radius: 10px;
+}
+
+.most-sold-card p
+{
+    color: var(--input-color);
+}
+
+.sold-card-img
+{
+    width: 9rem;
+    align-self: center;
+}
+
+.recommendation
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-weight: 600;
+    color: var(--text-contrast-color);
+}
+
+.categories-card div
+{
+    width: 4.5rem;
+    align-self: center;
+}
+
+.categories-card img
+{
+    border-radius: 0;
+}
+
+.learn-more
+{
+    color: var(--text-contrast-blue);
+    font-weight: 600;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.info-paragraph
+{
+    color: var(--input-color);
+}
+
+@media (min-width: 1200px)
+{
+    main
+    {
+        padding: 0 5rem;
+    }
+
+    header
+    {
+        background-color: var(--white);
+    }
+
+    nav
+    {
+        display: flex;
+        align-self: center;
+        padding-left: 45vw;
+        gap: 1rem;
+        color: var(--text-contrast-color);
+    }
+
+    #hero
+    {
+        flex-direction: row;
+        align-items: center;
+        width: 90vw;
+        padding: 0;
+        border-radius: 15px;
+    }
+
+    #hero h1
+    {
+        padding-left: 3rem;
+    }
+
+    #hero span
+    {
+        display: none;
+    }
+
+    #weekly-deals
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    #free-delivery
+    {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        height: 34vh;
+    }
+
+    #free-delivery img
+    {
+        height: 22.5vh;
+    }
+
+    #free-delivery div
+    {
+        flex-direction: row;
+    }
+
+    #disc-up
+    {
+        grid-column: 3;
+        grid-row: 1;
+        height: 15vh;
+    }
+
+    #free-data
+    {
+        grid-column: 3;
+        grid-row: 2;
+        height: 15vh;
+    }
+
+    #ehya-versarry-deals
+    {
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    #show-all-mob-hide
+    {
+        display: block;
+    }
+
+    #show-all
+    {
+        display: none;
+    }
+
+    #recommendations
+    {
+        flex-direction: row;
+        padding-bottom: 2rem;
+    }
+
+    #aging-cream img
+    {
+        padding: 3vh 4vw;
+    }
+
+    #headphones img
+    {
+        padding: 3vh 4vw;
+    }
+
+    #laptop-recommended img
+    {
+        padding: 3vh 4vw;
+        width: 9rem;
+    }
+
+    #blender img
+    {
+        padding: 3vh 4vw;
+    }
+
+    #why-us
+    {
+        padding-bottom: 5rem;
+    }
+
+    #why-us-content
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        text-align: center;
+        padding-left: 7rem;
+        gap: 4rem;
+    }
+
+    #why-us-img
+    {
+        width: clamp(1rem, 60vw, 40rem);
+    }
+
+    #why-us-paragraph
+    {
+        width: 38rem;
+        align-self: center;
+    }
+
+    #why-us-cards
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    #rate img
+    {
+        width: 1vw;
+    }
+
+    #never-miss-promo
+    {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin-top: 3rem;
+        width: 75vw;
+        border-radius: 15px;
+    }
+
+    #never-miss-promo p, #never-miss-promo b
+    {
+        text-align: left;
+        width: 25rem;
+        align-self: center;
+    }
+
+    #never-miss-promo div div
+    {
+        flex-direction: row;
+        width: 20rem;
+    }
+
+    #never-miss-promo input
+    {
+        width: 5vw;
+    }
+
+    #subscription
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: center;
+    }
+
+    #subscribe-button
+    {
+        width: 0.1vw;
+        margin: 0;
+        margin-right: 0.2rem;
+    }
+
+    #subscription input
+    {
+        width: 9rem;
+    }
+
+    #villain
+    {
+        display: none;
+    }
+
+    #hidden-villain
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        width: 20rem;
+        gap: 2rem;
+    }
+
+    #hidden-villain img
+    {
+        width: 5rem;
+    }
+
+    #hidden-villain p
+    {
+        width: 20vw;
+    }
+
+    #hidden-socials img
+    {
+        width: 3rem;
+    }
+
+    #rights
+    {
+        padding-top: 15vh;
+    }
+
+    #mob-burguer-menu
+    {
+        display: none;
+    }
+
+    #get-now-button
+    {
+        border: 2px solid var(--button-outline-blue);
+        border-radius: 25px;
+        color: var(--button-outline-blue);
+        font-weight: 700;
+        width: 7rem;
+        text-align: center;
+        align-self: center;
+        padding: 0.7rem 1rem;
+    }
+
+    .link-card, .link-card b
+    {
+        width: 10rem;
+    }
+
+    .show-all-desktop a
+    {
+        border: 2px solid var(--button-outline-blue);
+        border-radius: 25px;
+        color: var(--button-outline-blue);
+        font-weight: 700;
+        width: 5rem;
+        align-self: center;
+        padding: 0.7rem 1.8rem;
+    }
+
+    .why-us-card
+    {
+        width: clamp(14rem, 10vw, 90rem);
+        height: clamp(12rem, 12vh, 10rem);
+        align-self: center;
+        font-size: 0.7rem;
+    }
+
+    .show-all-desktop
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .most-sold-card
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem;
+        width: 65vw;
+    }
+
+    .most-sold-buttons
+    {
+        display: flex;
+        align-self: center;
+        gap: 1rem
+    }
+
+    .most-sold-info
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem
+    }
+
+    .most-sold-info b
+    {
+        display: inline;
+    }
+
+    .most-sold-img
+    {
+        display: flex;
+        flex-direction: row;
+    }
+}

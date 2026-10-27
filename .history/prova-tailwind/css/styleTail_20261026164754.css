@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.testedasilva{
+    @apply bg-white text-gray-500 rounded-md w-[87vw] h-[5vh] min-h-[25px] max-h-[47px]
+}

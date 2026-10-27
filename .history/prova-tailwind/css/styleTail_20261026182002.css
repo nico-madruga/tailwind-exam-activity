@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@utility vasco {
+  @apply bg-black text-white p-4 rounded-lg font-bold border-2 border-white;
+} 
